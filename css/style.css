@@ -8,4 +8,12 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  /* padding: 3%; */
+}
+
+.header {
+  height: 100vh;
+  background-image: url(../img/main-planet.jpg);
+  background-size: cover;
+  background-position: center;
 }
