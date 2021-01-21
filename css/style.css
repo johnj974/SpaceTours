@@ -16,4 +16,44 @@ body {
   background-image: url(../img/main-planet.jpg);
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+.rocket-logo {
+  color: white;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.center-box {
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-heading {
+  color: white;
+  text-transform: uppercase;
+}
+
+.main-text {
+  display: block;
+  font-weight: 400;
+  letter-spacing: 35px;
+  font-size: 60px;
+}
+
+.secondary-text {
+  display: block;
+  font-weight: 400;
+  letter-spacing: 20px;
+  font-size: 20px;
+}
+
+.center-box {
+  width: 50%;
+  margin: auto;
 }
