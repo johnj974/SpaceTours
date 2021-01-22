@@ -31,7 +31,6 @@ body {
   top: 60%;
   left: 60%;
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .main-heading {
@@ -64,27 +63,8 @@ body {
   margin: auto;
 }
 
-/* ANIMATIONS */
-@keyframes main-text-animate {
-  0% {
-    opacity: 0;
-    transform: translate(-100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes secondary-text-animate {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.discover-text {
+  text-align: center;
 }
 
 .btn:link,
@@ -95,7 +75,7 @@ body {
   letter-spacing: 15px;
   animation-name: discover-text-animate;
   animation-duration: 8s;
-  /* animation-delay: 4s; */
+  /* display: inline-block; */
 }
 
 /* ANIMATIONS */
@@ -124,14 +104,11 @@ body {
 @keyframes discover-text-animate {
   0% {
     opacity: 0;
-    transform: translateY(0px);
   }
   50% {
     opacity: 0;
-    transform: translateY(0);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
   }
 }
