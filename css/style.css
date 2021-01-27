@@ -1,13 +1,20 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  box-sizing: border-box;
+  /* font-size: 16px; */
   /* padding: 3%; */
 }
 
@@ -22,8 +29,9 @@ body {
 .rocket-logo {
   color: white;
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
+  font-size: 1.5rem;
 }
 
 .center-box {
@@ -37,14 +45,14 @@ body {
   color: white;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 .main-text {
   display: block;
   font-weight: 400;
-  letter-spacing: 70px;
-  font-size: 60px;
+  letter-spacing: 7rem;
+  font-size: 6rem;
   animation-name: main-text-animate;
   animation-duration: 5s;
 }
@@ -52,8 +60,8 @@ body {
 .secondary-text {
   display: block;
   font-weight: 400;
-  letter-spacing: 20.5px;
-  font-size: 20px;
+  letter-spacing: 2.05rem;
+  font-size: 2rem;
   animation-name: secondary-text-animate;
   animation-duration: 5s;
 }
@@ -65,6 +73,7 @@ body {
 
 .discover-text {
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .btn:link,
@@ -72,7 +81,7 @@ body {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 15px;
+  letter-spacing: 1.5rem;
   animation-name: discover-text-animate;
   animation-duration: 8s;
   /* display: inline-block; */
@@ -82,7 +91,7 @@ body {
 @keyframes main-text-animate {
   0% {
     opacity: 0;
-    transform: translate(-100px);
+    transform: translate(-10rem);
   }
   100% {
     opacity: 1;
@@ -93,7 +102,7 @@ body {
 @keyframes secondary-text-animate {
   0% {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(4rem);
   }
   100% {
     opacity: 1;
