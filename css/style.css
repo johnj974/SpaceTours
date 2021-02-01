@@ -26,7 +26,7 @@ body {
   position: relative;
 }
 
-.rocket-logo {
+.header__rocket-logo {
   color: white;
   position: absolute;
   top: 4rem;
@@ -34,11 +34,13 @@ body {
   font-size: 1.5rem;
 }
 
-.center-box {
+.header__center-box {
   position: absolute;
   top: 60%;
   left: 60%;
   transform: translate(-50%, -50%);
+  width: 50%;
+  margin: auto;
 }
 
 .main-heading {
@@ -48,7 +50,7 @@ body {
   margin-bottom: 4rem;
 }
 
-.main-text {
+.main-heading--main-text {
   display: block;
   font-weight: 400;
   letter-spacing: 7rem;
@@ -57,7 +59,7 @@ body {
   animation-duration: 5s;
 }
 
-.secondary-text {
+.main-heading--secondary-text {
   display: block;
   font-weight: 400;
   letter-spacing: 2.05rem;
@@ -66,10 +68,10 @@ body {
   animation-duration: 5s;
 }
 
-.center-box {
+/* .header__center-box {
   width: 50%;
   margin: auto;
-}
+} */
 
 .discover-text {
   text-align: center;
