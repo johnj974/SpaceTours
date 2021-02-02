@@ -3,31 +3,38 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   box-sizing: border-box;
   /* font-size: 16px; */
-  /* padding: 3%; */ }
+  /* padding: 3%; */
+}
+
+$color-white: #fff;
 
 .header {
   height: 100vh;
   background-image: url(../img/main-planet.jpg);
   background-size: cover;
   background-position: center;
-  position: relative; }
+  position: relative;
+}
 
 .header__rocket-logo {
-  color: #fff;
+  color: $color-white;
   position: absolute;
   top: 4rem;
   left: 4rem;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 .header__center-box {
   position: absolute;
@@ -35,13 +42,15 @@ body {
   left: 60%;
   transform: translate(-50%, -50%);
   width: 50%;
-  margin: auto; }
+  margin: auto;
+}
 
 .main-heading {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+}
 
 .main-heading--main-text {
   display: block;
@@ -49,7 +58,8 @@ body {
   letter-spacing: 7rem;
   font-size: 6rem;
   animation-name: main-text-animate;
-  animation-duration: 5s; }
+  animation-duration: 5s;
+}
 
 .main-heading--secondary-text {
   display: block;
@@ -57,47 +67,61 @@ body {
   letter-spacing: 2.05rem;
   font-size: 2rem;
   animation-name: secondary-text-animate;
-  animation-duration: 5s; }
+  animation-duration: 5s;
+}
 
 /* .header__center-box {
   width: 50%;
   margin: auto;
 } */
+
 .discover-text {
   text-align: center;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 .btn:link,
 .btn:visited {
-  color: #fff;
+  color: $color-white;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1.5rem;
   animation-name: discover-text-animate;
   animation-duration: 8s;
-  /* display: inline-block; */ }
+  /* display: inline-block; */
+}
 
 /* ANIMATIONS */
 @keyframes main-text-animate {
   0% {
     opacity: 0;
-    transform: translate(-10rem); }
+    transform: translate(-10rem);
+  }
   100% {
     opacity: 1;
-    transform: translateX(0); } }
+    transform: translateX(0);
+  }
+}
 
 @keyframes secondary-text-animate {
   0% {
     opacity: 0;
-    transform: translateY(4rem); }
+    transform: translateY(4rem);
+  }
   100% {
     opacity: 1;
-    transform: translateY(0); } }
+    transform: translateY(0);
+  }
+}
 
 @keyframes discover-text-animate {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   50% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
