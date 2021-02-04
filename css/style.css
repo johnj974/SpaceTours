@@ -55,10 +55,6 @@ body {
     animation-name: secondary-text-animate;
     animation-duration: 5s; }
 
-/* .header__center-box {
-  width: 50%;
-  margin: auto;
-} */
 .discover-text {
   text-align: center;
   font-size: 1.5rem; }
@@ -70,8 +66,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1.5rem;
   animation-name: discover-text-animate;
-  animation-duration: 8s;
-  /* display: inline-block; */ }
+  animation-duration: 8s; }
 
 /* ANIMATIONS */
 @keyframes main-text-animate {
