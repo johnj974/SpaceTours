@@ -1,0 +1,34 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.main-heading {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 4rem;
+
+  &--main-text {
+    display: block;
+    font-weight: 400;
+    letter-spacing: 7rem;
+    font-size: 6rem;
+    animation-name: main-text-animate;
+    animation-duration: 5s;
+  }
+
+  &--secondary-text {
+    display: block;
+    font-weight: 400;
+    letter-spacing: 2.05rem;
+    font-size: 2rem;
+    animation-name: secondary-text-animate;
+    animation-duration: 5s;
+  }
+}
+
+.discover-text {
+  text-align: center;
+  font-size: 1.5rem;
+}
