@@ -21,43 +21,39 @@ body {
   background-size: cover;
   background-position: center;
   position: relative; }
-
-.header__rocket-logo {
-  color: #fff;
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-  font-size: 1.5rem; }
-
-.header__center-box {
-  position: absolute;
-  top: 60%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  margin: auto; }
+  .header__rocket-logo {
+    color: #fff;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    font-size: 1.5rem; }
+  .header__center-box {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    margin: auto; }
 
 .main-heading {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 4rem; }
-
-.main-heading--main-text {
-  display: block;
-  font-weight: 400;
-  letter-spacing: 7rem;
-  font-size: 6rem;
-  animation-name: main-text-animate;
-  animation-duration: 5s; }
-
-.main-heading--secondary-text {
-  display: block;
-  font-weight: 400;
-  letter-spacing: 2.05rem;
-  font-size: 2rem;
-  animation-name: secondary-text-animate;
-  animation-duration: 5s; }
+  .main-heading--main-text {
+    display: block;
+    font-weight: 400;
+    letter-spacing: 7rem;
+    font-size: 6rem;
+    animation-name: main-text-animate;
+    animation-duration: 5s; }
+  .main-heading--secondary-text {
+    display: block;
+    font-weight: 400;
+    letter-spacing: 2.05rem;
+    font-size: 2rem;
+    animation-name: secondary-text-animate;
+    animation-duration: 5s; }
 
 /* .header__center-box {
   width: 50%;
