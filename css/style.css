@@ -72,6 +72,13 @@ body {
   animation-name: discover-text-animate;
   animation-duration: 8s; }
 
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  background-color: red; }
+  .row:not(:last-child) {
+    margin-bottom: 6rem; }
+
 .header {
   height: 100vh;
   background-image: url(../img/main-planet.jpg);
