@@ -32,3 +32,13 @@ body {
   text-align: center;
   font-size: 1.5rem;
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, $color-white, $color-grey);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

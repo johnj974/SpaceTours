@@ -63,6 +63,15 @@ body {
   text-align: center;
   font-size: 1.5rem; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, #fff, #777);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; }
+
 .btn:link,
 .btn:visited {
   color: #fff;
@@ -71,13 +80,6 @@ body {
   letter-spacing: 1.5rem;
   animation-name: discover-text-animate;
   animation-duration: 8s; }
-
-.row {
-  max-width: 114rem;
-  margin: 0 auto;
-  background-color: red; }
-  .row:not(:last-child) {
-    margin-bottom: 6rem; }
 
 .header {
   height: 100vh;
@@ -98,3 +100,7 @@ body {
     transform: translate(-50%, -50%);
     width: 50%;
     margin: auto; }
+
+.section-about {
+  background-color: rgba(0, 0, 0, 0.883);
+  padding: 25rem 0; }
