@@ -35,10 +35,23 @@ body {
 
 .heading-secondary {
   font-size: 3.5rem;
+  font-weight: 400;
   text-transform: uppercase;
   display: inline-block;
   background-image: linear-gradient(to right, $color-white, $color-grey);
   -webkit-background-clip: text;
   background-clip: text;
+  letter-spacing: 2px;
   color: transparent;
+  transition: all 0.2s;
+
+  &:hover {
+    text-shadow: 0.5rem 1rem 2rem rgba($color-white, 0.5);
+  }
+
+  //  Creates a skewing animation+shadow effect to text
+  // &:hover {
+  //   transform: skewY(2deg) skewX(15deg) scale(1.1);
+  //   text-shadow: 0.5rem 1rem 2rem rgba($color-white, 0.5);
+  // }
 }

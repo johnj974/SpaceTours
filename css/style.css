@@ -65,12 +65,20 @@ body {
 
 .heading-secondary {
   font-size: 3.5rem;
+  font-weight: 400;
   text-transform: uppercase;
   display: inline-block;
   background-image: linear-gradient(to right, #fff, #777);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent; }
+  letter-spacing: 2px;
+  color: transparent;
+  transition: all 0.2s; }
+  .heading-secondary:hover {
+    text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.5); }
+
+.u-center-text {
+  text-align: center; }
 
 .btn:link,
 .btn:visited {
@@ -80,6 +88,24 @@ body {
   letter-spacing: 1.5rem;
   animation-name: discover-text-animate;
   animation-duration: 8s; }
+
+.row {
+  max-width: 114rem;
+  background-color: aquamarine;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    background-color: #8a2be2;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
 
 .header {
   height: 100vh;
