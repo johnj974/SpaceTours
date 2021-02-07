@@ -92,17 +92,27 @@ body {
 .u-center-text {
   text-align: center; }
 
-.u-margin-bottom-80 {
+.u-margin-bottom-big {
   margin-bottom: 8rem; }
 
-.btn:link,
-.btn:visited {
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.btn:link, .btn:visited {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1.5rem;
   animation-name: discover-text-animate;
   animation-duration: 8s; }
+
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #f7f7f7;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #f7f7f7;
+  padding: 3px; }
 
 .row {
   max-width: 114rem;
