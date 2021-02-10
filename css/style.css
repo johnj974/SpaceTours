@@ -189,3 +189,9 @@ body {
   background-color: rgba(0, 0, 0, 0.883);
   padding: 25rem 0;
   border-top: 3px solid #fff; }
+
+.section-features {
+  background-color: rgba(0, 0, 0, 0.883);
+  padding: 25rem 0;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(119, 119, 119, 0.8)), url(../../img/earth.jpeg);
+  background-size: cover; }

@@ -4,3 +4,16 @@
   padding: 25rem 0;
   border-top: 3px solid $color-white;
 }
+
+.section-features {
+  background-color: $color-black;
+  padding: 25rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-white, 0.2),
+      rgba($color-grey, 0.8)
+    ),
+    url(../../img/earth.jpeg);
+  background-size: cover;
+  // clip-path: polygon(100% 0, 100% 79%, 0 100%, 0 14%);
+}
