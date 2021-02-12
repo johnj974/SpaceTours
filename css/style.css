@@ -137,16 +137,34 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden; }
     .card__side--front {
-      background-color: #ffbb00; }
+      background-color: rgba(255, 255, 255, 0.2); }
+      .card__side--front--gold {
+        color: #ffbb00;
+        box-shadow: 0 1.5rem 4rem #ffbb00; }
     .card__side--back {
-      background-color: #8a2be2;
       transform: rotateY(180deg); }
+      .card__side--back--gold {
+        background-image: linear-gradient(to right bottom, #ffbb00, #ff5100ed); }
   .card:hover .card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+  .card__image {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: color;
+    -webkit-clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 0%);
+    clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 0%); }
+    .card__image--gold {
+      background-image: linear-gradient(to right bottom, #ffbb00, #ff5100ed), url(../../img/gold-image.jpg); }
+    .card__image--silver {
+      background-image: url(../../img/silver-image.jpg); }
+    .card__image--bronze {
+      background-image: url(../../img/bronze-image.jpg); }
 
 .composition {
   position: relative; }
@@ -223,6 +241,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
+  -webkit-clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 0%);
   clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 0%); }
   .header__helm-logo {
     color: #fff;

@@ -16,20 +16,59 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    //box-shadow: 0 1.5rem 4rem $color-gold;
 
     &--front {
-      background-color: $color-gold;
+      background-color: rgba($color-white, 0.2);
+
+      &--gold {
+        color: $color-gold;
+        box-shadow: 0 1.5rem 4rem $color-gold;
+      }
     }
     &--back {
-      background-color: $color-blueViolet;
       transform: rotateY(180deg);
+      //box-shadow: 0 1.5rem 4rem $color-white;
+
+      &--gold {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-gold,
+          $color-orange
+        );
+      }
     }
   }
 
   &:hover &__side--front {
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
   }
   &:hover &__side--back {
     transform: rotateY(0deg);
+  }
+
+  &__image {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: color;
+    -webkit-clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 0%);
+    clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 0%);
+
+    &--gold {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-gold,
+          $color-orange
+        ),
+        url(../../img/gold-image.jpg);
+    }
+    &--silver {
+      background-image: url(../../img/silver-image.jpg);
+    }
+    &--bronze {
+      background-image: url(../../img/bronze-image.jpg);
+    }
   }
 }

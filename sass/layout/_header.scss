@@ -4,6 +4,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  -webkit-clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 0%);
   clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 0%);
 
   &__helm-logo {
