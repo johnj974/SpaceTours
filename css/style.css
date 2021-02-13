@@ -97,6 +97,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.u-margin-top-big {
+  margin-top: 8rem; }
+
 .btn:link, .btn:visited {
   color: #fff;
   text-decoration: none;
@@ -104,6 +107,11 @@ body {
   letter-spacing: 1.5rem;
   animation-name: discover-text-animate;
   animation-duration: 8s; }
+  .btn:link--white, .btn:visited--white {
+    background-color: #fff;
+    color: #ffbb00; }
+    .btn:link--white::after, .btn:visited--white::after {
+      background-color: #fff; }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
@@ -131,8 +139,6 @@ body {
   .card__side {
     height: 50rem;
     transition: all, 1s ease;
-    color: #ffffff;
-    font-size: 2rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -144,11 +150,24 @@ body {
       background-color: rgba(255, 255, 255, 0.2); }
       .card__side--front--gold {
         color: #ffbb00;
-        box-shadow: 0 1.5rem 4rem #ffbb00; }
+        box-shadow: 0 0.5rem 4rem #ffbb00;
+        border: 5px solid #ffbb00; }
+      .card__side--front--silver {
+        color: #f7f7f7;
+        box-shadow: 0 0.5rem 4rem #f7f7f7;
+        border: 5px solid #f7f7f7; }
+      .card__side--front--bronze {
+        color: #925815;
+        box-shadow: 0 0.5rem 4rem #925815;
+        border: 5px solid #925815; }
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back--gold {
         background-image: linear-gradient(to right bottom, #ffbb00, #ff5100ed); }
+      .card__side--back--silver {
+        background-image: linear-gradient(to right bottom, #f7f7f7, #777); }
+      .card__side--back--bronze {
+        background-image: linear-gradient(to right bottom, #925815, #945921); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -165,6 +184,54 @@ body {
       background-image: url(../../img/silver-image.jpg); }
     .card__image--bronze {
       background-image: url(../../img/bronze-image.jpg); }
+  .card__heading {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: absolute;
+    top: 16rem;
+    right: 1rem;
+    text-align: right; }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li.gold {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li.gold:not(:last-child) {
+          border-bottom: 1px solid #ffbb00; }
+      .card__details ul li.silver {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li.silver:not(:last-child) {
+          border-bottom: 1px solid #f7f7f7; }
+      .card__details ul li.bronze {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li.bronze:not(:last-child) {
+          border-bottom: 1px solid #925815; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; }
+  .card__price-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
 
 .composition {
   position: relative; }
@@ -274,5 +341,5 @@ body {
 
 .section-tours {
   background-color: rgba(0, 0, 0, 0.883);
-  padding: 25rem 0 40rem 0;
+  padding: 25rem 0 25rem 0;
   margin-top: -16rem; }

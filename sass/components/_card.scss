@@ -9,8 +9,6 @@
   &__side {
     height: 50rem;
     transition: all, 1s ease;
-    color: #ffffff;
-    font-size: 2rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -25,7 +23,20 @@
 
       &--gold {
         color: $color-gold;
-        box-shadow: 0 1.5rem 4rem $color-gold;
+        box-shadow: 0 0.5rem 4rem $color-gold;
+        border: 5px solid $color-gold;
+      }
+
+      &--silver {
+        color: $color-light-grey;
+        box-shadow: 0 0.5rem 4rem $color-light-grey;
+        border: 5px solid $color-light-grey;
+      }
+
+      &--bronze {
+        color: $color-bronze;
+        box-shadow: 0 0.5rem 4rem $color-bronze;
+        border: 5px solid $color-bronze;
       }
     }
     &--back {
@@ -39,6 +50,22 @@
           $color-orange
         );
       }
+
+      &--silver {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-light-grey,
+          $color-grey
+        );
+      }
+
+      &--bronze {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-bronze,
+          $color-dark-bronze
+        );
+      }
     }
   }
 
@@ -49,6 +76,7 @@
     transform: rotateY(0deg);
   }
 
+  // FRONT STYLING
   &__image {
     background-size: cover;
     height: 23rem;
@@ -71,4 +99,93 @@
       background-image: url(../../img/bronze-image.jpg);
     }
   }
+
+  &__heading {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: absolute;
+    top: 16rem;
+    right: 1rem;
+    text-align: right;
+    // width: 60%;
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li.gold {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-gold;
+        }
+      }
+
+      li.silver {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-light-grey;
+        }
+      }
+
+      li.bronze {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-bronze;
+        }
+      }
+    }
+  }
+
+  // BACK STYLING
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+  }
+
+  &__price-box {
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
 }
+
+// &__heading-span {
+//   padding: 1rem 1.5rem;
+//   box-decoration-break: clone;
+//   &--gold {
+//     background-image: linear-gradient(
+//       to right bottom,
+//       rgba($color-gold, 0.85),
+//       rgba($color-orange, 0.85)
+//     );
+//   }
+// }
