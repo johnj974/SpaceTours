@@ -113,6 +113,16 @@ body {
     width: 100%;
     object-fit: cover; }
 
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url(../img/earth.jpeg);
+  background-size: cover;
+  height: 50rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.15); }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
+
 .btn:link, .btn:visited {
   color: #fff;
   text-decoration: none;
@@ -316,7 +326,7 @@ body {
     filter: blur(3px) brightness(80%); }
 
 .feature-box {
-  background-color: rgba(0, 0, 0, 0.883);
+  background-color: #000000e1;
   opacity: 0.8;
   font-size: 1.5rem;
   padding: 2.5rem;
@@ -337,6 +347,42 @@ body {
   .feature-box__text {
     color: #fff;
     font-weight: lighter; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 2px solid transparent;
+  width: 90%;
+  display: block; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #09ee09; }
+  .form__input:focus:invalid {
+    border-bottom: 2px solid #ff5100ed; }
+  .form__input::-webkit-input-placeholder {
+    color: #777; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
 .row {
   max-width: 114rem;
@@ -381,14 +427,14 @@ body {
     margin: auto; }
 
 .section-about {
-  background-color: rgba(0, 0, 0, 0.883);
+  background-color: #000000e1;
   padding: 25rem 0;
   clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 11.3%);
   margin-top: -11rem; }
 
 .section-features {
   margin-top: -11rem;
-  background-color: rgba(0, 0, 0, 0.883);
+  background-color: #000000e1;
   padding: 25rem 0;
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(119, 119, 119, 0.8)), url(../../img/earth.jpeg);
   background-size: cover;
@@ -396,7 +442,7 @@ body {
   clip-path: polygon(100% 0, 100% 79%, 0 100%, 0 14%); }
 
 .section-tours {
-  background-color: rgba(0, 0, 0, 0.883);
+  background-color: #000000e1;
   padding: 25rem 0 25rem 0;
   margin-top: -16rem; }
 
@@ -406,14 +452,4 @@ body {
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to right top, #777, rgba(0, 0, 0, 0.883)); }
-
-.book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../img/earth.jpeg);
-  background-size: cover;
-  height: 50rem;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.15); }
-  .book__form {
-    width: 50%;
-    padding: 6rem; }
+  background-image: linear-gradient(to right top, #777, #000000e1); }
