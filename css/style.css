@@ -495,9 +495,7 @@ body {
   background-image: url(../img/main-planet.jpg);
   background-size: cover;
   background-position: center;
-  position: relative;
-  -webkit-clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 0%);
-  clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 0%); }
+  position: relative; }
   .header__helm-logo {
     color: #fff;
     position: absolute;
@@ -571,7 +569,7 @@ body {
   display: inline-block;
   transition: all 0.5s; }
 
-.navigation__link:hover, .navigation__linkactive {
+.navigation__link:hover, .navigation__link:active {
   text-decoration: underline; }
 
 .navigation__checkbox:checked ~ .navigation__background {
@@ -595,9 +593,9 @@ body {
     left: 0;
     transition: all 0.2s; }
   .navigation__icon::before {
-    top: -0.8rem; }
+    top: -0.7rem; }
   .navigation__icon::after {
-    top: 0.8rem; }
+    top: 0.7rem; }
 
 .navigation__button:hover .navigation__icon::before {
   top: -1rem; }
