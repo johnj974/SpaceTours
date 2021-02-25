@@ -16,6 +16,9 @@ body {
     font-size: 6rem;
     animation-name: main-text-animate;
     animation-duration: 5s;
+    @include resize(phone) {
+      letter-spacing: 1rem;
+    }
   }
 
   &--secondary-text {
@@ -25,6 +28,10 @@ body {
     font-size: 2rem;
     animation-name: secondary-text-animate;
     animation-duration: 5s;
+    @include resize(phone) {
+      letter-spacing: 1rem;
+      font-size: 1rem;
+    }
   }
 }
 
@@ -45,17 +52,12 @@ body {
   color: transparent;
   transition: all 0.2s;
   text-shadow: 0.5rem 1rem 2rem rgba($color-white, 0.5);
-
-  // Code to add a shadow effect on hover state.
-  // &:hover {
-  //   text-shadow: 0.5rem 1rem 2rem rgba($color-white, 0.5);
-  // }
-
-  //  Creates a skewing animation+shadow effect to text
-  // &:hover {
-  //   transform: skewY(2deg) skewX(15deg) scale(1.1);
-  //   text-shadow: 0.5rem 1rem 2rem rgba($color-white, 0.5);
-  // }
+  @include resize(tab) {
+    font-size: 3rem;
+  }
+  @include resize(phone) {
+    font-size: 2rem;
+  }
 }
 
 .heading-tertiary {

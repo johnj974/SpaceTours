@@ -14,6 +14,12 @@
     z-index: 50;
     text-align: center;
     cursor: pointer;
+
+    @include resize(tab) {
+      right: 7rem;
+      height: 6rem;
+      width: 6rem;
+    }
   }
 
   &__background {
@@ -28,6 +34,11 @@
     box-shadow: 0.5rem 0.5rem 2rem $color-white;
     //transition: transform 0.5s;
     transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+    @include resize(tab) {
+      right: 7.5rem;
+      height: 5rem;
+      width: 5rem;
+    }
   }
 
   &__nav {
@@ -98,6 +109,10 @@
   &__icon {
     position: relative;
     margin-top: 3.4rem;
+
+    @include resize(tab) {
+      margin-top: 3rem;
+    }
     &,
     &::before,
     &::after {

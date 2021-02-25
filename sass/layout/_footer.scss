@@ -19,6 +19,12 @@
     border-top: 2px solid $color-silver;
     padding-top: 2rem;
     display: inline-block;
+
+    @include resize(tab) {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -55,5 +61,10 @@
     padding-top: 2rem;
     width: 80%;
     float: right;
+
+    @include resize(tab) {
+      width: 100%;
+      text-align: center;
+    }
   }
 }

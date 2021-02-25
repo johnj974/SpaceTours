@@ -5,6 +5,16 @@
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include resize(tab) {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+  @include resize(tab) {
+    max-width: 50rem;
+  }
+  @include resize(phone) {
+    max-width: 80%;
   }
 
   @include clearfix;
@@ -14,6 +24,15 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include resize(tab) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include resize(tab) {
+      width: 100% !important;
     }
   }
 
