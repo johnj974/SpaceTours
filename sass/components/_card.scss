@@ -237,6 +237,10 @@
 
     &__price-box {
       margin-bottom: 6rem;
+
+      @include resize(phone) {
+        margin-bottom: 2rem;
+      }
     }
 
     &__price-value {

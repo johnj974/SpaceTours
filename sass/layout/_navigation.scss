@@ -20,6 +20,11 @@
       height: 6rem;
       width: 6rem;
     }
+    @include resize(phone) {
+      right: 3rem;
+      height: 6rem;
+      width: 6rem;
+    }
   }
 
   &__background {
@@ -36,6 +41,11 @@
     transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
     @include resize(tab) {
       right: 7.5rem;
+      height: 5rem;
+      width: 5rem;
+    }
+    @include resize(phone) {
+      right: 3rem;
       height: 5rem;
       width: 5rem;
     }
