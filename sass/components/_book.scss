@@ -7,12 +7,24 @@
     ),
     url(../img/earth.jpeg);
   background-size: cover;
-  height: 50rem;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-white, 0.15);
+
+  @include resize(tab) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-black, 0.7) 0%,
+        rgba($color-black, 0.7) 100%
+      ),
+      url(../img/earth.jpeg);
+  }
 
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include resize(tab) {
+      width: 100%;
+    }
   }
 }

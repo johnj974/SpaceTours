@@ -6,12 +6,12 @@
   position: relative;
   height: 50rem;
 
-  @include resize(tab) {
-    height: 60rem;
-  }
-  @include resize(phone) {
-    height: 50rem;
-  }
+  // @include resize(tab) {
+  //   height: 60rem;
+  // }
+  // @include resize(phone) {
+  //   height: 50rem;
+  // }
 
   &__side {
     height: 50rem;
@@ -24,12 +24,12 @@
     border-radius: 3px;
     overflow: hidden;
 
-    @include resize(tab) {
-      height: 60rem;
-    }
-    @include resize(phone) {
-      height: 50rem;
-    }
+    // @include resize(tab) {
+    //   height: 60rem;
+    // }
+    // @include resize(phone) {
+    //   height: 50rem;
+    // }
 
     &--front {
       background-color: rgba($color-white, 0.2);
@@ -189,16 +189,58 @@
     font-size: 6rem;
     font-weight: 100;
   }
-}
 
-// &__heading-span {
-//   padding: 1rem 1.5rem;
-//   box-decoration-break: clone;
-//   &--gold {
-//     background-image: linear-gradient(
-//       to right bottom,
-//       rgba($color-gold, 0.85),
-//       rgba($color-orange, 0.85)
-//     );
-//   }
-// }
+  //-------------------------------MEDIA------------------------
+  @include resize(tab) {
+    height: auto;
+    border-radius: 3px;
+
+    &__side {
+      height: auto;
+      position: relative;
+      padding-bottom: 3rem;
+
+      &--back {
+        transform: rotateY(0deg);
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        margin-top: -3rem;
+      }
+
+      &--front {
+        &--gold {
+          border: none;
+          box-shadow: none;
+        }
+        &--silver {
+          border: none;
+          box-shadow: none;
+        }
+        &--bronze {
+          border: none;
+          box-shadow: none;
+        }
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0deg);
+    }
+
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0%;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 6rem;
+    }
+
+    &__price-value {
+      font-size: 6rem;
+    }
+  }
+}
